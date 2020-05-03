@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "a46a596b-9eb6-404d-9e94-54b6f6864494",
+		"name": "cloud-cdnd-c2-final_new",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://{{HOST}}/filteredimage?image_url=https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOST}}/filteredimage?image_url=https://image.shutterstock.com/image-photo/starfish-seashell-on-summer-beach-600w-1115385161.jpg",
+					"protocol": "http",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://image.shutterstock.com/image-photo/starfish-seashell-on-summer-beach-600w-1115385161.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{HOST}}/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOST}}/filteredimage?image_url=",
+					"protocol": "http",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fc34a0b8-1de3-40a0-a3bd-6cef4c886cfa",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "99173634-9efe-4203-958a-dcc56526d845",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "789ccf45-541a-43ed-a215-be6951e861f5",
+			"key": "HOST",
+			"value": "udagram-dayvaz-p2-dev-dev.us-east-2.elasticbeanstalk.com",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
